@@ -1,6 +1,8 @@
-# HelloWorldApp
+# Bandcamp Angular Replica App Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+
+This project was made for the software engineering principles lab.
 
 ## Development server
 
