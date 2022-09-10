@@ -37,6 +37,7 @@ div.footer-lcol1 {
 
 div.footer-lcol2 {
   float: left;
+  margin-left: 2%
 }
 
 div.footer-rcol {
@@ -49,7 +50,8 @@ ul.footer-col-list {
   font-size: 13px;
   text-align: left;
   line-height: 1.2;
-  padding: 40px 0 0 0;
+  margin: 40px 0 0 0;
+  padding: 0;
 }
 
 .footer-col-list a {
@@ -84,6 +86,7 @@ ul.footer-col-list {
 }
 
 .footer-col-lang {
+  margin: 40px 0 0 0;
   padding: 0;
 }
 
@@ -98,7 +101,6 @@ ul.footer-col-list {
   padding: 5px 6px 5px 6px;
   position: relative;
   background-color: #3A6A77;
-  margin: 40px 0 0 0;
 }
 
 #lang-picker-lang {
