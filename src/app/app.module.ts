@@ -7,6 +7,10 @@ import { HeaderNavbarComponent } from './header/navbar/navbar.component';
 import { FooterNavbarComponent } from './footer/navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContentComponent } from './content/content.component';
+import { LowerComponent } from './content/lower/lower.component';
+import { FactoidComponent } from './content/lower/factoid/factoid.component';
+import { EmailIntakeComponent } from './content/lower/email-intake/email-intake.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +18,12 @@ import { FooterComponent } from './footer/footer.component';
     HeaderNavbarComponent,
     FooterNavbarComponent,
     HeaderComponent,
-    FooterComponent
-],
+    FooterComponent,
+    ContentComponent,
+    LowerComponent,
+    FactoidComponent,
+    EmailIntakeComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule

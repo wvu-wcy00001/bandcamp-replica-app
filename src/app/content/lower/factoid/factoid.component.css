@@ -1,0 +1,59 @@
+div.factoid {
+
+}
+
+div.factoid-container {
+    max-width: 1106px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.col {
+    position: relative;
+}
+
+div.lcol {
+    float: left;
+    width: 11.392%;
+}
+
+div.mcol {
+    float: left;
+    width: 74.683544303797%;
+    margin: 0;
+}
+
+div.rcol {
+    float: right;
+    width: 11.392%;
+}
+
+div.dots {
+    position: relative;
+    margin-top: 41px;
+    height: 20px;
+}
+
+
+div.left-dots {
+    background: url("/assets/img/homep/dotsdotsdots-130@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+div.right-dots {
+    background: url("/assets/img/homep/dotsdotsdots-130-r@2x.png") no-repeat;
+    background-size: 100%;
+}
+
+p.factoid-text {
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 36px 0 32px;
+}
+
+span.nowrap {
+    display: inline-block;
+}
