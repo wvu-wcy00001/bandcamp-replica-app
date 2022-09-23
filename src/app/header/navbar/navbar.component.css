@@ -37,7 +37,7 @@ div.navbar-subtext {
   margin: 10px 0 16px;
 }
 
-.blue-gradient {
+a.blue-gradient {
   color: #408ea3;
   background: -webkit-linear-gradient(left, #6046FE, #1DA0C3);
   background-clip: border-box;
@@ -52,11 +52,9 @@ h2.subtext-h {
   color: #161113;
   font-size: 16px;
   font-weight: 400;
-  opacity: 1;
-  transition: opacity .2s ease;
 }
 
-.search-height {
+div.search-height {
   height: 36px;
 }
 
@@ -65,20 +63,9 @@ div.navbar-search {
 }
 
 form.menu-search {
-  position: relative;
-  -webkit-user-select: auto;
-  appearance: none;
-  border-radius: 3px;
-  color: rgba(22,17,19,0.7);
-  font-size: 14px;
-  line-height: 16px;
-  background: #f3f3f3;
-  border: 1px solid #f3f3f3;
-  outline: none;
+  position: relative; 
   width: fit-content;
   float: right;
-  visibility: visible;
-  transition: visibility 0.2s, opacity .2s ease-in;
 }
 
 button.menu-search-button {
@@ -96,13 +83,14 @@ button.menu-search-button {
   fill: #333;
 }
 
+button svg {
+    vertical-align: top;
+}
+
 input.menu-search-input {
-  box-shadow: 0 0 5px #d7d7d7;
-  -webkit-user-select: auto;
   appearance: none;
   border-radius: 3px;
   color: rgba(22,17,19,0.7);
-  outline: none;
   font-size: 14px;
   line-height: 16px;
   background: #f3f3f3;
