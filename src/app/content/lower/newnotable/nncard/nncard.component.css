@@ -1,0 +1,38 @@
+div.nncard {
+    background-color: #ffffff;
+    min-height: 414px;
+    width: 18.625678119349%;
+}
+
+h4.nncard-title {
+    display: block;
+    font: 13px/1.2307692308 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 18px;
+    margin: 9px 0 0 0;
+    padding: 0 10px 0 10px;
+}
+
+h4.nncard-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+p.nncard-genre {
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+p.nncard-descr {
+    font-family: Georgia, Times, serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+}
+
+span.albumartisttext {
+    display: block;
+}

@@ -11,6 +11,8 @@ import { ContentComponent } from './content/content.component';
 import { LowerComponent } from './content/lower/lower.component';
 import { FactoidComponent } from './content/lower/factoid/factoid.component';
 import { EmailIntakeComponent } from './content/lower/email-intake/email-intake.component';
+import { NewnotableComponent } from './content/lower/newnotable/newnotable.component';
+import { NncardComponent } from './content/lower/newnotable/nncard/nncard.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { EmailIntakeComponent } from './content/lower/email-intake/email-intake.
     ContentComponent,
     LowerComponent,
     FactoidComponent,
-    EmailIntakeComponent
+    EmailIntakeComponent,
+    NewnotableComponent,
+    NncardComponent,
   ],
   imports: [
     BrowserModule,

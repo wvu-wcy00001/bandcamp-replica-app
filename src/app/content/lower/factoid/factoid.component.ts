@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'factoid',
+  selector: 'app-content-factoid',
   templateUrl: './factoid.component.html',
   styleUrls: ['./factoid.component.css']
 })
