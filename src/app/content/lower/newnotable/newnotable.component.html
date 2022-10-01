@@ -1,5 +1,17 @@
 <div class="nn">
-    <div class="nnpanel">
-        <app-content-nncard albumname="TestName" albumartist="TestArtist" albumgenre="genre" albumdescr="none"></app-content-nncard>
+    <div class="nn-header">
+        <div class="col lcol">
+            <h3 class="nn-title">NEW AND NOTABLE</h3>
+        </div>
+
+        <div class="col rcol">
+
+        </div>
+    </div>
+
+    <div class="nn-panel-container">
+        <div class="nn-panel">
+            <app-content-nncard *ngFor="let card of cards" [class.nncard-margin]="card.enablemargin" albuminfo_url="{{card.albuminfo_url}}" albumart_url="{{card.albumart_url}}" albumname={{card.albumname}} albumartist="{{card.albumartist}}" albumgenre="{{card.albumgenre}}" albumdescr="{{card.albumdescr}}"></app-content-nncard>
+        </div>
     </div>
 </div>

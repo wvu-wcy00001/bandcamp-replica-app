@@ -12,6 +12,7 @@ export class NncardComponent implements OnInit {
   @Input() albumartist: string;
   @Input() albumgenre: string;
   @Input() albumdescr: string;
+  @Input() margin_enable: boolean;
   
   constructor() {
     this.albuminfo_url = "";
@@ -20,6 +21,7 @@ export class NncardComponent implements OnInit {
     this.albumartist = "Artist not available";
     this.albumgenre = "";
     this.albumdescr = "";
+    this.margin_enable = false;
   }
 
   ngOnInit(): void {

@@ -1,11 +1,13 @@
 div.nncard {
     background-color: #ffffff;
     min-height: 414px;
-    width: 18.625678119349%;
+}
+
+img.nncard-coverimg {
+    max-width: 100%;
 }
 
 h4.nncard-title {
-    display: block;
     font: 13px/1.2307692308 'Helvetica Neue',Helvetica,Arial,sans-serif;
     line-height: 18px;
     margin: 9px 0 0 0;
