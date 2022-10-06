@@ -1,0 +1,17 @@
+<div class="nn">
+    <div class="nn-header">
+        <div class="col lcol">
+            <h3 class="nn-title">NEW AND NOTABLE</h3>
+        </div>
+
+        <div class="col rcol">
+
+        </div>
+    </div>
+
+    <div class="nn-panel-container">
+        <div class="nn-panel d-flex justify-content-between">
+            <app-content-nncard *ngFor="let card of cards" albuminfo_url="{{card.albuminfo_url}}" albumart_url="{{card.albumart_url}}" albumname={{card.albumname}} albumartist="{{card.albumartist}}" albumgenre="{{card.albumgenre}}" albumdescr="{{card.albumdescr}}"></app-content-nncard>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,14 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.23077;
+  font-size: 13px;
+}
+
+app-root {
+    position: relative;
+    display: block;
+    min-height: 100vh;
+}
+

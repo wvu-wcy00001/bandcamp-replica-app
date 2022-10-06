@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderNavbarComponent } from './navbar.component';
+import { HomeRoute } from './home.route';
 
-describe('HeaderNavbarComponent', () => {
-  let component: HeaderNavbarComponent;
-  let fixture: ComponentFixture<HeaderNavbarComponent>;
+describe('HomeRoute', () => {
+  let component: HomeRoute;
+  let fixture: ComponentFixture<HomeRoute>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderNavbarComponent ]
+      declarations: [ HomeRoute ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderNavbarComponent);
+    fixture = TestBed.createComponent(HomeRoute);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

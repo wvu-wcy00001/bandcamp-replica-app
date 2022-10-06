@@ -11,14 +11,12 @@ export class NewnotableComponent implements OnInit {
   cards: CardModel [] = [];
   
   constructor() {
-    var i = 0;
     for(var newnotable_entry of mock_newnotable_entry_list) {
       var card = new CardModel(newnotable_entry.albuminfo_url, newnotable_entry.albumart_url,
                                     newnotable_entry.albumname, newnotable_entry.albumartist,
-                                    newnotable_entry.albumgenre, newnotable_entry.albumdescr, (i != 0));
+                                    newnotable_entry.albumgenre, newnotable_entry.albumdescr);
       this.cards.push(card);
       console.log(card);
-      ++i;
     }
   }
   ngOnInit(): void {

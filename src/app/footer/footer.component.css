@@ -1,16 +1,99 @@
-div.footer {
-    z-index: 1;
-    width: 100%;
-    height: 400px;
-    background-color: #477987;
-}
-
-div.footer-pad {
+div.footer-content {
     position: relative;
     top: 0;
+    max-width: 1106px;
     width: 100%;
     height: 100%;
     min-height: 320px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0 0 80px 0;
 }
 
+div.footer-nav-col {
+  position: relative;
+  width: 23%;
+  height: 100%;
+}
+
+div.footer-nav-lcol1 {
+  float: left;
+}
+
+div.footer-nav-lcol2 {
+  float: left;
+  margin-left: 2%
+}
+
+div.footer-nav-rcol {
+  float: right;
+}
+
+ul.footer-nav-col-list {
+  list-style: none;
+  color: #abc1c7;
+  font-size: 13px;
+  text-align: left;
+  line-height: 1.2;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.footer-nav-col-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav-col-list li {
+  margin: 0 0 13px;
+}
+
+#apps-label {
+  padding-right: 0.35em;
+}
+
+#andr {
+  padding-right: 0.6em;
+}
+
+#ios {
+  border-left: 1px solid #7ea0a9;
+  padding-left: 0.6em;
+}
+
+#twt {
+  padding-right: 0.6em;
+}
+
+#twtstat {
+  border-left: 1px solid #7ea0a9;
+  padding-left: 0.6em;
+}
+
+.footer-nav-col-lang {
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+
+.footer-nav-col-lang span, .footer-nav-col-lang a {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+#lang-picker {
+  display: inline-block;
+  text-align: right;
+  padding: 5px 6px 5px 6px;
+  position: relative;
+  background-color: #3A6A77;
+}
+
+#lang-picker-lang {
+  color: #ccc;
+  list-style: none;
+}
+
+#lang-picker-current-lang {
+  color: #fff;
+  text-decoration: none;
+}

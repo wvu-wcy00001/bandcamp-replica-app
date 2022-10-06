@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarComponent } from './navbar.component';
+import { CopyrightRoute } from './copyright.route';
 
-describe('NavbarComponent', () => {
-  let component: NavbarComponent;
-  let fixture: ComponentFixture<NavbarComponent>;
+describe('CopyrightRoute', () => {
+  let component: CopyrightRoute;
+  let fixture: ComponentFixture<CopyrightRoute>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
+      declarations: [ CopyrightRoute ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NavbarComponent);
+    fixture = TestBed.createComponent(CopyrightRoute);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
