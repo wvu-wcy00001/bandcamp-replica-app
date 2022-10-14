@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { mock_newnotable_entry_list } from './newnotable_list';
-import { CardModel } from './newnotable.model';
+import { newnotable_entry_list } from './newnotable.list';
+import { NewNotableCardModel } from './nncard/nncard.model';
 
 @Component({
   selector: 'app-content-nn',
@@ -8,15 +8,14 @@ import { CardModel } from './newnotable.model';
   styleUrls: ['./newnotable.component.css']
 })
 export class NewnotableComponent implements OnInit {
-  cards: CardModel [] = [];
+  cards: NewNotableCardModel[] = [];
   
   constructor() {
-    for(var newnotable_entry of mock_newnotable_entry_list) {
-      var card = new CardModel(newnotable_entry.albuminfo_url, newnotable_entry.albumart_url,
+    for(var newnotable_entry of newnotable_entry_list) {
+      var card = new NewNotableCardModel(newnotable_entry.albuminfo_url, newnotable_entry.albumart_url,
                                     newnotable_entry.albumname, newnotable_entry.albumartist,
                                     newnotable_entry.albumgenre, newnotable_entry.albumdescr);
       this.cards.push(card);
-      console.log(card);
     }
   }
   ngOnInit(): void {

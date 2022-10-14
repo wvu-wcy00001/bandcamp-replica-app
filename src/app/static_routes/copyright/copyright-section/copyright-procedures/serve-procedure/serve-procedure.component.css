@@ -1,0 +1,24 @@
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #161113;
+    margin: 0 0 1em;
+    line-height: 22px;
+}
+
+p {
+    padding-bottom: 1em;
+    font-size: 16px;
+    line-height: 24px;
+    color: #494748;
+    margin: 0;
+}
+
+ol {
+    color: #494748;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 0 1em 1.5em;
+    margin: 0;
+}
+

@@ -1,0 +1,27 @@
+.section {
+    margin-left: 8.48708%;
+    width: 57.56457%;
+}
+
+.section h1 {
+    color: #161113;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 0.67em;
+    margin-bottom: 1.5em;
+}
+
+.section p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 1.6em;
+    color: #494748;
+}
+
+.section a {
+    color: #0687f5;
+    text-decoration: none;
+}
+

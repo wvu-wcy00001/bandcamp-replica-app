@@ -1,0 +1,4 @@
+<hr>
+<h2>{{category_title}}</h2>
+<p>{{category_descr}}</p>
+<app-job-entry *ngFor="let job of jobs_list" [entry_title]="job.entry_title" [entry_descr]="job.entry_descr" [entry_job_url]="job.entry_job_url"></app-job-entry>

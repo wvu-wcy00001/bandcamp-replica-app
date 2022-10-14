@@ -1,4 +1,4 @@
-export class CardModel {
+export class NewNotableCardModel {
     albuminfo_url: string;
     albumart_url: string;
     albumname: string;

@@ -1,5 +1,5 @@
 //first three are personal picks, others are actually new and notable
-export const mock_newnotable_entry_list = [
+export const newnotable_entry_list = [
     {
         albuminfo_url: "https://chromakey.bandcamp.com/album/dcast2k-2",
         albumart_url: "https://f4.bcbits.com/img/a0056113148_16.jpg",

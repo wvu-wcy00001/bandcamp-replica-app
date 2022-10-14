@@ -1,0 +1,41 @@
+<div class="section">
+    <h1>
+    Jobs at Bandcamp
+    </h1>
+    <p>
+    Welcome! Have you read <a href="/about">our about page</a>? Great. Come 
+    help us support artists and the amazing musical universe they create.
+    </p>
+    <h2>
+    Current openings
+    </h2>
+    <nav aria-label="Job openings">
+        <ul>
+            <li><a href="#product">Product</a>
+                <ul>
+                    <li><a href="#product-director-artists-labels">Director of Product, Artist + Labels Group</a></li>
+                    <li><a href="#product-technical-product-manager-fraud">Technical Product Manager, Fraud</a></li>
+                </ul>
+            </li>
+            <li><a href="#support-specialist">Support Specialist</a></li>
+            <li><a href="#vinyl-rep">Vinyl Rep</a></li>
+            <li><a href="#engineering">Engineering</a>
+                <ul>
+                    <li><a href="#senior-software-engineer-albums-and-tracks">Senior Software Engineer, Albums and Tracks</a></li>
+                    <li><a href="#senior-software-engineer-live">Senior Software Engineer, Bandcamp Live</a></li>
+                    <li><a href="#software-engineer-internationalization">Software Engineer, Internationalization</a></li>
+                    <li><a href="#software-engineer-payments">Software Engineer, Payments</a></li>
+                    <li><a href="#software-engineer-playback-features">Software Engineer, Playback Features</a></li>
+                    <li><a href="#senior-systems-engineer">Senior Systems Engineer</a></li>
+                    <li><a href="#systems-engineer">Systems Engineer</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <p>
+    Our application links will take you to the Epic Games jobs board. 
+    <a href="https://www.epicgames.com/site/en-US/news/bandcamp-joining-epic-games-to-support-fair-open-platforms-for-artists-and-fans" target="_blank">Bandcamp joined Epic Games in 2022</a>.
+    </p>
+
+    <app-job-category *ngFor="let cat of job_categories" [category_title]="cat.category_title" [category_descr]="cat.category_descr" [jobs_list]="cat.jobs_list"></app-job-category> 
+</div>

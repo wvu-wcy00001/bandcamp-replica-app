@@ -17,6 +17,14 @@ import { JobsRoute } from './static_routes/jobs/jobs.route';
 import { PrivacyRoute } from './static_routes/privacy/privacy.route';
 import { CopyrightRoute } from './static_routes/copyright/copyright.route';
 import { HomeRoute } from './static_routes/home/home.route';
+import { JobEntryComponent } from './static_routes/jobs/jobs-section/job-category/job-entry/job-entry.component';
+import { JobCategoryComponent } from './static_routes/jobs/jobs-section/job-category/job-category.component';
+import { JobsSectionComponent } from './static_routes/jobs/jobs-section/jobs-section.component';
+import { CopyrightSectionComponent } from './static_routes/copyright/copyright-section/copyright-section.component';
+import { CounteringProcedureComponent } from './static_routes/copyright/copyright-section/copyright-procedures/countering-procedure/countering-procedure.component';
+import { ServeProcedureComponent } from './static_routes/copyright/copyright-section/copyright-procedures/serve-procedure/serve-procedure.component';
+import { ClaimsProcedureComponent } from './static_routes/copyright/copyright-section/copyright-procedures/claims-procedure/claims-procedure.component';
+import { CopyrightProceduresComponent } from './static_routes/copyright/copyright-section/copyright-procedures/copyright-procedures.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +43,14 @@ import { HomeRoute } from './static_routes/home/home.route';
     PrivacyRoute,
     CopyrightRoute,
     HomeRoute,
+    JobEntryComponent,
+    JobCategoryComponent,
+    JobsSectionComponent,
+    CopyrightSectionComponent,
+    CounteringProcedureComponent,
+    ServeProcedureComponent,
+    ClaimsProcedureComponent,
+    CopyrightProceduresComponent,
   ],
   imports: [
     BrowserModule,

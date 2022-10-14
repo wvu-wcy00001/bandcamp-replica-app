@@ -1,0 +1,14 @@
+.procedures-list {
+    padding: 0 0 1.6em 1em;
+    margin: 0;
+}
+
+.proc-entry {
+    color: #494748;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.procedure {
+    display: block;
+}
