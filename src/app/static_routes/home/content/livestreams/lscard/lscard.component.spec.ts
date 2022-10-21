@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LowerComponent } from './lower.component';
+import { LscardComponent } from './lscard.component';
 
-describe('LowerComponent', () => {
-  let component: LowerComponent;
-  let fixture: ComponentFixture<LowerComponent>;
+describe('LscardComponent', () => {
+  let component: LscardComponent;
+  let fixture: ComponentFixture<LscardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LowerComponent ]
+      declarations: [ LscardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(LowerComponent);
+    fixture = TestBed.createComponent(LscardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

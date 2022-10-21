@@ -40,5 +40,4 @@ export const newnotable_entry_list = [
         albumgenre: "electronic",
         albumdescr: "The UK-based electronic collective incorporates many musical influences on their debut EP including traditional Amazonian icaros."
     }
-
 ];

@@ -1,11 +1,11 @@
-div.nn {
+div.ls {
     padding: 36px 0 36px 0;
     max-width: 1106px;
     margin-left: auto;
     margin-right: auto;
 }
 
-div.nn-header {
+div.ls-header {
     width: 100%;
 }
 
@@ -17,23 +17,21 @@ div.lcol {
     width: 49.367088607595%;
 }
 
-h3.nn-title {
+h3.ls-title {
     color: #408ea3;
     font-size: 14px;
     font-weight: 500;
     margin: 0 0 18px;
 }
 
-div.nn-panel-container {
+div.ls-panel-container {
     width: 100%;
     overflow: hidden;
 }
 
-div.nn-panel {
-    min-height: 414px;
-}
-
-app-content-nncard {
-    float: left;
+div.lscard {
+    background-color: #ffffff;
     width: 18.625678119349%;
+    min-height: 280px;
+    float: left;
 }

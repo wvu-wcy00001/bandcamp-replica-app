@@ -1,0 +1,48 @@
+img.lscard-coverimg {
+    max-width: 100%;
+}
+
+div.lscard-info {
+    width: 100%;
+    padding: 8px 11px;
+}
+
+div.lscard-title {
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+span.titlefmt {
+    font: 14px/1.2307692308 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 18px;
+}
+
+h4 {
+    margin: 0;
+}
+
+span.streamtitle {
+    color: #000;
+}
+
+span.streamartist {
+    color: #333;
+}
+
+a.link {
+    text-decoration: none;
+}
+
+div.lscard-time {
+    width: 100%;
+}
+
+p.timefmt {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+span.streamtitle {
+    display: block;
+}

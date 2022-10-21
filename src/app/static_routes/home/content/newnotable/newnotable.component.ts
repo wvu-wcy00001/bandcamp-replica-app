@@ -12,9 +12,7 @@ export class NewnotableComponent implements OnInit {
   
   constructor() {
     for(var newnotable_entry of newnotable_entry_list) {
-      var card = new NewNotableCardModel(newnotable_entry.albuminfo_url, newnotable_entry.albumart_url,
-                                    newnotable_entry.albumname, newnotable_entry.albumartist,
-                                    newnotable_entry.albumgenre, newnotable_entry.albumdescr);
+      var card = newnotable_entry;
       this.cards.push(card);
     }
   }

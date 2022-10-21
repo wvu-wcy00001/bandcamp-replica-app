@@ -1,0 +1,19 @@
+<div class="ls">
+    <div class="ls-header">
+        <div class="col lcol">
+            <h3 class="ls-title">UPCOMING BANDCAMP LIVE STREAMS</h3>
+        </div>
+
+        <div class="col rcol">
+
+        </div>
+    </div>
+
+    <div class="ls-panel-container">
+        <div *ngIf="cards != undefined" class="ls-panel d-flex justify-content-between">
+            <div *ngFor="let card of cards" class="lscard">
+                <app-content-lscard [stream_url]="card.url" [streamtitle]="card.title" [streamartist]="card.artist" [streamdate]="card.date" [streamtime]="card.time"></app-content-lscard>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './share/header/header.component';
+import { FooterComponent } from './share/footer/footer.component';
 import { ContentComponent } from './static_routes/home/content/content.component';
-import { LowerComponent } from './static_routes/home/content/lower/lower.component';
-import { FactoidComponent } from './static_routes/home/content/lower/factoid/factoid.component';
-import { EmailIntakeComponent } from './static_routes/home/content/lower/email-intake/email-intake.component';
-import { NewnotableComponent } from './static_routes/home/content/lower/newnotable/newnotable.component';
-import { NncardComponent } from './static_routes/home/content/lower/newnotable/nncard/nncard.component';
+import { FactoidComponent } from './static_routes/home/content/factoid/factoid.component';
+import { EmailIntakeComponent } from './static_routes/home/content/email-intake/email-intake.component';
+import { NewnotableComponent } from './static_routes/home/content/newnotable/newnotable.component';
+import { NncardComponent } from './static_routes/home/content/newnotable/nncard/nncard.component';
 import { TermsRoute } from './static_routes/terms/terms.route';
 import { FtmpRoute } from './static_routes/ftmp/ftmp.route';
 import { JobsRoute } from './static_routes/jobs/jobs.route';
@@ -25,6 +25,8 @@ import { CounteringProcedureComponent } from './static_routes/copyright/copyrigh
 import { ServeProcedureComponent } from './static_routes/copyright/copyright-section/copyright-procedures/serve-procedure/serve-procedure.component';
 import { ClaimsProcedureComponent } from './static_routes/copyright/copyright-section/copyright-procedures/claims-procedure/claims-procedure.component';
 import { CopyrightProceduresComponent } from './static_routes/copyright/copyright-section/copyright-procedures/copyright-procedures.component';
+import { LivestreamsComponent } from './static_routes/home/content/livestreams/livestreams.component';
+import { LscardComponent } from './static_routes/home/content/livestreams/lscard/lscard.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,6 @@ import { CopyrightProceduresComponent } from './static_routes/copyright/copyrigh
     HeaderComponent,
     FooterComponent,
     ContentComponent,
-    LowerComponent,
     FactoidComponent,
     EmailIntakeComponent,
     NewnotableComponent,
@@ -51,10 +52,13 @@ import { CopyrightProceduresComponent } from './static_routes/copyright/copyrigh
     ServeProcedureComponent,
     ClaimsProcedureComponent,
     CopyrightProceduresComponent,
+    LivestreamsComponent,
+    LscardComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
