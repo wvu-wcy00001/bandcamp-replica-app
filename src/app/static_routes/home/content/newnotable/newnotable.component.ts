@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { newnotable_entry_list } from './newnotable.list';
+import { DatabaseService } from 'src/app/share/services/database.service';
 import { NewNotableCardModel } from './nncard/nncard.model';
 
 @Component({
@@ -8,15 +8,23 @@ import { NewNotableCardModel } from './nncard/nncard.model';
   styleUrls: ['./newnotable.component.css']
 })
 export class NewnotableComponent implements OnInit {
-  cards: NewNotableCardModel[] = [];
+  db: DatabaseService;
+  cards: NewNotableCardModel[] | undefined;
   
-  constructor() {
-    for(var newnotable_entry of newnotable_entry_list) {
-      var card = newnotable_entry;
-      this.cards.push(card);
-    }
+  constructor(db: DatabaseService) {
+    this.db = db;
   }
+
+  getNewNotableEntries() {
+    let handle = this.db.getEntriesHandle<NewNotableCardModel[]>('https://bandcamp-replica-app-default-rtdb.firebaseio.com/newnotable.json');
+    handle.subscribe((data: NewNotableCardModel[]) => {
+        this.cards = data;
+      }
+    );
+  }
+
   ngOnInit(): void {
+      this.getNewNotableEntries();
   }
 
 }

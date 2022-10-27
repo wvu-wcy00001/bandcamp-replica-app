@@ -1,5 +1,5 @@
 import { LivestreamCardModel } from './lscard/lscard.model';
-import { HttpClient } from '@angular/common/http';
+import { DatabaseService } from 'src/app/share/services/database.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,22 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LivestreamsComponent implements OnInit {
   cards: LivestreamCardModel[] | undefined;
-  http: HttpClient;
+  db: DatabaseService;
 
-  constructor(http: HttpClient) {
-    this.http = http;
+  constructor(db: DatabaseService) {
+    this.db = db;
   }
 
-  getStreamsInfo() {
-    var getreq = this.http.get<LivestreamCardModel[]>('https://bandcamp-replica-app-default-rtdb.firebaseio.com/livestreams.json');
-    getreq.subscribe((data: LivestreamCardModel[]) => {
-        console.log(data);
+  getStreamEntries() {
+    let handle = this.db.getEntriesHandle<LivestreamCardModel[]>('https://bandcamp-replica-app-default-rtdb.firebaseio.com/livestreams.json');
+    handle.subscribe((data: LivestreamCardModel[]) => {
         this.cards = data;
-    });
+      }
+    );
   }
 
   ngOnInit(): void {
-    this.getStreamsInfo();
+    this.getStreamEntries();
   }
 
 }

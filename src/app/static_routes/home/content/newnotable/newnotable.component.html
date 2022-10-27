@@ -10,7 +10,7 @@
     </div>
 
     <div class="nn-panel-container">
-        <div class="nn-panel d-flex justify-content-between">
+        <div *ngIf="cards != undefined" class="nn-panel d-flex justify-content-between">
             <div *ngFor="let card of cards" class="nncard">
                 <app-content-nncard albuminfo_url="{{card.albuminfo_url}}" albumart_url="{{card.albumart_url}}" albumname={{card.albumname}} albumartist="{{card.albumartist}}" albumgenre="{{card.albumgenre}}" albumdescr="{{card.albumdescr}}"></app-content-nncard>
             </div>
