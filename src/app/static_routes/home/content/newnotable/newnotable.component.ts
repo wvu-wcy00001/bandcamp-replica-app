@@ -16,7 +16,7 @@ export class NewnotableComponent implements OnInit {
   }
 
   getNewNotableEntries() {
-    let handle = this.db.getEntriesHandle<NewNotableCardModel[]>('https://bandcamp-replica-app-default-rtdb.firebaseio.com/newnotable.json');
+    let handle = this.db.getEntriesHandle<NewNotableCardModel>('newnotable');
     handle.subscribe((data: NewNotableCardModel[]) => {
         this.cards = data;
       }

@@ -16,7 +16,7 @@ export class LivestreamsComponent implements OnInit {
   }
 
   getStreamEntries() {
-    let handle = this.db.getEntriesHandle<LivestreamCardModel[]>('https://bandcamp-replica-app-default-rtdb.firebaseio.com/livestreams.json');
+    let handle = this.db.getEntriesHandle<LivestreamCardModel>('livestreams');
     handle.subscribe((data: LivestreamCardModel[]) => {
         this.cards = data;
       }

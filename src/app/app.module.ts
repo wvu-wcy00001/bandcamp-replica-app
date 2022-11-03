@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './share/header/header.component';
 import { FooterComponent } from './share/footer/footer.component';
@@ -58,7 +61,8 @@ import { LscardComponent } from './static_routes/home/content/livestreams/lscard
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DatabaseService {
-  http: HttpClient;
+  dbclient: AngularFireDatabase;
   
-  constructor(http: HttpClient) {
-    this.http = http;
+  constructor(dbclient: AngularFireDatabase) {
+    this.dbclient = dbclient;
   }
 
-  getEntriesHandle<T>(url: string) {
-    return this.http.get<T>(url);
+  getEntriesHandle<T>(a: string) {
+    return this.dbclient.list<T>(a).valueChanges();
   }
 }
