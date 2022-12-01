@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './share/header/header.component';
@@ -14,6 +14,7 @@ import { FactoidComponent } from './static_routes/home/content/factoid/factoid.c
 import { EmailIntakeComponent } from './static_routes/home/content/email-intake/email-intake.component';
 import { NewnotableComponent } from './static_routes/home/content/newnotable/newnotable.component';
 import { NncardComponent } from './static_routes/home/content/newnotable/nncard/nncard.component';
+import { AdminRoute } from './static_routes/admin/admin.route';
 import { TermsRoute } from './static_routes/terms/terms.route';
 import { FtmpRoute } from './static_routes/ftmp/ftmp.route';
 import { JobsRoute } from './static_routes/jobs/jobs.route';
@@ -57,12 +58,14 @@ import { LscardComponent } from './static_routes/home/content/livestreams/lscard
     CopyrightProceduresComponent,
     LivestreamsComponent,
     LscardComponent,
+    AdminRoute,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

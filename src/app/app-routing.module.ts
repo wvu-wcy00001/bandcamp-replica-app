@@ -6,6 +6,7 @@ import { FtmpRoute } from './static_routes/ftmp/ftmp.route';
 import { CopyrightRoute } from './static_routes/copyright/copyright.route';
 import { JobsRoute } from './static_routes/jobs/jobs.route';
 import { HomeRoute } from './static_routes/home/home.route';
+import { AdminRoute } from './static_routes/admin/admin.route';
 
 const routes: Routes = [
     { path: '', component: HomeRoute },
@@ -13,7 +14,8 @@ const routes: Routes = [
     { path: 'privacy', component: PrivacyRoute },
     { path: 'fair_trade_music_policy', component: FtmpRoute },
     { path: 'copyright', component: CopyrightRoute },
-    { path: 'jobs', component: JobsRoute }
+    { path: 'jobs', component: JobsRoute },
+    { path: 'admin', component: AdminRoute }
 ];
 
 @NgModule({

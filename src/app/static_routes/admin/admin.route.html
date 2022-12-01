@@ -1,0 +1,26 @@
+<div style="padding: 20px 20px 20px 20px;">
+    <h2>Add Livestream</h2>
+    <form #postForm="ngForm" (ngSubmit)="submitNewLivestreamCard(postForm.value)">
+        <div class="input-group">
+            <span class="input-group-text">URL</span>
+            <input class="form-control" type="text" placeholder="URL" ngModel name="url">
+        </div>
+         <div class="input-group">
+            <span class="input-group-text">Title</span>
+            <input class="form-control" type="text" placeholder="Title" ngModel name="title">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Artist</span>
+            <input class="form-control" type="text" placeholder="Artist" ngModel name="artist">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Date</span>
+            <input class="form-control" type="text" placeholder="Date" ngModel name="date">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Time</span>
+            <input class="form-control" type="text" placeholder="Time" ngModel name="time">
+        </div>
+        <button class="btn btn-dark" type="submit">Submit</button>
+    </form>
+</div>
