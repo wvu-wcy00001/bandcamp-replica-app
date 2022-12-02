@@ -1,10 +1,22 @@
+import { environment } from '../environments/environment';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+
+import { AdminRoute } from './static_routes/admin/admin.route';
+import { TermsRoute } from './static_routes/terms/terms.route';
+import { FtmpRoute } from './static_routes/ftmp/ftmp.route';
+import { JobsRoute } from './static_routes/jobs/jobs.route';
+import { PrivacyRoute } from './static_routes/privacy/privacy.route';
+import { CopyrightRoute } from './static_routes/copyright/copyright.route';
+import { HomeRoute } from './static_routes/home/home.route';
+import { LoginRoute } from './static_routes/login/login.route';
+import { SignupRoute } from './static_routes/signup/signup.route';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './share/header/header.component';
@@ -14,13 +26,6 @@ import { FactoidComponent } from './static_routes/home/content/factoid/factoid.c
 import { EmailIntakeComponent } from './static_routes/home/content/email-intake/email-intake.component';
 import { NewnotableComponent } from './static_routes/home/content/newnotable/newnotable.component';
 import { NncardComponent } from './static_routes/home/content/newnotable/nncard/nncard.component';
-import { AdminRoute } from './static_routes/admin/admin.route';
-import { TermsRoute } from './static_routes/terms/terms.route';
-import { FtmpRoute } from './static_routes/ftmp/ftmp.route';
-import { JobsRoute } from './static_routes/jobs/jobs.route';
-import { PrivacyRoute } from './static_routes/privacy/privacy.route';
-import { CopyrightRoute } from './static_routes/copyright/copyright.route';
-import { HomeRoute } from './static_routes/home/home.route';
 import { JobEntryComponent } from './static_routes/jobs/jobs-section/job-category/job-entry/job-entry.component';
 import { JobCategoryComponent } from './static_routes/jobs/jobs-section/job-category/job-category.component';
 import { JobsSectionComponent } from './static_routes/jobs/jobs-section/jobs-section.component';
@@ -59,9 +64,12 @@ import { LscardComponent } from './static_routes/home/content/livestreams/lscard
     LivestreamsComponent,
     LscardComponent,
     AdminRoute,
+    LoginRoute,
+    SignupRoute,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,

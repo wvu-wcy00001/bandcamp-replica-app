@@ -1,6 +1,9 @@
 /changelog
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# Temp
+.firebase/
+
 # Compiled output
 /dist
 /tmp

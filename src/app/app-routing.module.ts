@@ -7,6 +7,8 @@ import { CopyrightRoute } from './static_routes/copyright/copyright.route';
 import { JobsRoute } from './static_routes/jobs/jobs.route';
 import { HomeRoute } from './static_routes/home/home.route';
 import { AdminRoute } from './static_routes/admin/admin.route';
+import { LoginRoute } from './static_routes/login/login.route';
+import { SignupRoute } from './static_routes/signup/signup.route';
 
 const routes: Routes = [
     { path: '', component: HomeRoute },
@@ -15,7 +17,9 @@ const routes: Routes = [
     { path: 'fair_trade_music_policy', component: FtmpRoute },
     { path: 'copyright', component: CopyrightRoute },
     { path: 'jobs', component: JobsRoute },
-    { path: 'admin', component: AdminRoute }
+    { path: 'admin', component: AdminRoute },
+    { path: 'login', component: LoginRoute },
+    { path: 'signup', component: SignupRoute }
 ];
 
 @NgModule({

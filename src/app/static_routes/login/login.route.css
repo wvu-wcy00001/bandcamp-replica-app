@@ -1,0 +1,24 @@
+div.login-content {
+    width: 650px;
+    min-height: 550px;
+    margin: 0 auto;
+    padding: 40px 0 60px 0;
+}
+
+h2.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+div.creds {
+    margin-bottom: 50px;
+}
+
+form.cred-form {
+    padding: 0 100px 0 100px;
+}
+
+div.email-field {
+    margin-bottom: 20px;
+}
